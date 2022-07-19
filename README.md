@@ -1,1 +1,1 @@
-<h1>Doctor.M</h1>
+<h1 align="center">Doctor.M</h1>
