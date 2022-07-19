@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+{% load static %}
+{% load i18n %}
+<html>
+<head>
+  <meta charset="utf-8"/>
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+  <!-- Site Metas -->
+  <meta name="keywords" content=""/>
+  <meta name="description" content=""/>
+  <meta name="author" content="Xadjayev Muzaffar"/>
+
+  <title>Doctor.M</title>
+
+  <!-- slider stylesheet -->
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.1.3/assets/owl.carousel.min.css"/>
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.css' %}"/>
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Dosis:400,500|Poppins:400,700&amp;display=swap" rel="stylesheet"/>
+  <!-- Custom styles for this template -->
+  <link href="{% static 'css/style.css' %}" rel="stylesheet"/>
+  <!-- responsive style -->
+  <link href="{% static 'css/responsive.css' %}" rel="stylesheet"/>
+</head>
+<style>
+  .menu{
+      background: -webkit-gradient(linear, left top, right top, from(#864ddf), to(#203376));
+      background: linear-gradient(to right, #864ddf, #203376);
+  }
+  @media screen and (max-width: 576px) {
+      #res, #res1{
+          text-align: center;
+      }
+  }
+  @media screen and (max-width: 976px) {
+      #res, #res1{
+          text-align: center;
+      }
+  }
+</style>
+
+<body>
+  <header class="header_section menu p-3">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-8">
+            <nav class="navbar navbar-expand-lg custom_nav-container ">
+              <a class="navbar-brand" href="{% url 'home-page' %}">
+                <span>
+                  Doctor . M
+                </span>
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <div class="d-flex  flex-column flex-lg-row align-items-center">
+                  {% if user.is_authenticated %}
+                    <ul class="navbar-nav" style="display:flex; width:70vw; justify-content: flex-end;">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="{% url 'home-page' %}">{% trans 'Home' %} <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'about-page' %}">{% trans 'About' %} </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'contact-page' %}">{% trans 'Contact' %}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'feedback-page' %}">{% trans 'Feedbacks' %}</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="{% url 'profile-page' %}">{% trans 'Profile' %}</a>
+                    </li>
+                    <li class="nav-item mt-2">
+                      <form action="{% url 'set_language' %}" id="res" method="post">{% csrf_token %}
+                        <input name="next" type="hidden" value="{{ redirect_to }}">
+                        <select name="language" class="form-select" onchange="this.form.submit()">
+                            {% get_current_language as LANGUAGE_CODE %}
+                            {% get_available_languages as LANGUAGES %}
+                            {% get_language_info_list for LANGUAGES as languages %}
+                            {% for language in languages %}
+                                <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                    {{ language.name_local }} ({{ language.code }})
+                                </option>
+                            {% endfor %}
+                        </select>
+                      </form>
+                    </li>
+                  </ul>
+                  {% else %}
+                    <ul class="navbar-nav" style="display:flex; width:70vw; justify-content: flex-end;">
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'login-page' %}"> {% trans 'LogIn' %}</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="{% url 'signup-page' %}"> {% trans 'Sign Up' %}</a>
+                      </li>
+                      <li class="nav-item mt-2">
+                        <form action="{% url 'set_language' %}" id="res1" method="post">{% csrf_token %}
+                          <input name="next" type="hidden" value="{{ redirect_to }}">
+                          <select name="language" class="form-select" onchange="this.form.submit()">
+                              {% get_current_language as LANGUAGE_CODE %}
+                              {% get_available_languages as LANGUAGES %}
+                              {% get_language_info_list for LANGUAGES as languages %}
+                              {% for language in languages %}
+                                  <option value="{{ language.code }}"{% if language.code == LANGUAGE_CODE %} selected{% endif %}>
+                                      {{ language.name_local }} ({{ language.code }})
+                                  </option>
+                              {% endfor %}
+                          </select>
+                        </form>
+                      </li>
+                  </ul>
+                  {% endif %}
+                </div>
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+  {% block doctor %}
+
+  {% endblock %}
+
+  <div class="footer_bg" style="margin-top: 100px;">
+    <!-- info section -->
+    <section class="info_section layout_padding2-bottom">
+      <div class="container">
+        <h3 class="">
+          Doctor . M
+        </h3>
+      </div>
+      <div class="container info_content">
+
+        <div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4">
+              <div class="d-flex">
+                <h5>
+                  {% trans 'Services' %}
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="">
+                      {% trans 'Laboratory Tests' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      {% trans 'Ambulance Service' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      {% trans 'Surgical operations' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      {% trans 'Read More' %}
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="">
+                      Loram ipusm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Loram ipusm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Loram ipusm
+                    </a>
+                  </li>
+                  <li>
+                    <a href="">
+                      Loram ipusm
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4">
+              <div class="d-flex">
+                <h5>
+                  {% trans 'Contact Us' %}
+                </h5>
+              </div>
+              <div class="d-flex ">
+                <ul>
+                  <li>
+                    <a href="#">
+                      {% trans 'Phone Number' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {% trans 'Address' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {% trans 'Read More' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {% trans 'Web Site' %}
+                    </a>
+                  </li>
+                </ul>
+                <ul class="ml-3 ml-md-5">
+                  <li>
+                    <a href="#">
+                      +998112223344
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      {% trans 'Namangan City' %}
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      Links
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      adipiscing
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="d-flex flex-column flex-lg-row justify-content-between align-items-center align-items-lg-baseline">
+          <div class="social-box">
+            <a href="">
+              <img src="{% static 'images/fb.png' %}" alt=""/>
+            </a>
+
+            <a href="">
+              <img src="{% static 'images/twitter.png' %}" alt=""/>
+            </a>
+            <a href="">
+              <img src="{% static 'images/linkedin1.png' %}" alt=""/>
+            </a>
+            <a href="">
+              <img src="{% static 'images/instagram1.png' %}" alt=""/>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- end info_section -->
+
+    <!-- footer section -->
+    <section class="container-fluid footer_section">
+      <p>
+        © {% trans '2022 All Rights Reserved. Made By' %}
+        <a href="https://github.com/Muzaffar-Xadjayev/" target="_blank">Xadjayev Muzaffar</a>
+      </p>
+    </section>
+    <!-- footer section -->
+  </div>
+
+
+  <script type="text/javascript" src="{% static 'js/jquery-3.4.1.min.js' %}"></script>
+  <script type="text/javascript" src="{% static 'js/bootstrap.js' %}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+
+</body>
+</html>

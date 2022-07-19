@@ -1,0 +1,30 @@
+{% extends 'base.html' %}
+{% block doctor %}
+{% load static %}
+{% load i18n %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-lg-6 col-sm-10 col-12 mx-auto">
+            <h4 class="text-center">{% trans 'Write down the disease that is bothering you' %}</h4>
+            <hr>
+            <div class="card shadow p-3">
+                <form method="post">
+                    {% csrf_token %}
+                    {% if status %}
+                        <div class="alert {{col}}">{% trans 'Feedback has been created. Expect an answer soon.' %}</div>
+                    {% endif %}
+                    <div class="mb-2">
+                        <label>{% trans 'Title' %}</label>
+                        <input type="text" class="form-control" required name="title" placeholder="{% trans 'Enter a Title...' %}">
+                    </div>
+                    <div class="mb-2">
+                        <label>{% trans 'Text' %}</label>
+                        <textarea name="text" rows="6" required class="form-control" placeholder="{% trans 'Enter a Text..' %}"></textarea>
+                    </div>
+                    <input type="submit" class="btn btn-success" value="{% trans 'Send' %}">
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

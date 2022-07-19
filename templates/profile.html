@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block doctor %}
+{% load static %}
+{% load i18n %}
+<div class="container mt-5">
+<div class="row">
+    <div class="col-lg-4 col-md-10 col-12 my-2">
+        <div class="list-group">
+          <a href="{% url 'profile-page' %}" class="list-group-item list-group-item-action" aria-current="true">
+            {% trans 'My All Information' %}
+          </a>
+          <a href="{% url 'edit-profile-page' %}" class="list-group-item list-group-item-action">{% trans 'Edit Profile' %}</a>
+          <a href="{% url 'question-page' %}" class="list-group-item list-group-item-action">{% trans 'My Questions' %}</a>
+          <a href="{% url 'logout-page' %}" class="list-group-item list-group-item-action">{% trans 'Log Out' %}</a>
+
+        </div>
+    </div>
+    <div class="col-lg-8 col-md-10 col-12 my-2">
+        {% block profileBlock %}
+        <div class="card shadow p-3">
+            <h4 align="center">{% trans 'My All Information' %}</h4>
+            <hr>
+            <h5 class="text-muted my-2">{% trans 'First Name' %} : <span class="text-dark">{{data.first_name}}</span></h5>
+            <h5 class="text-muted my-2">{% trans 'Last Name' %} : <span class="text-dark">{{data.last_name}}</span></h5>
+            <h5 class="text-muted my-2">{% trans 'Username' %} : <span class="text-dark">{{data.username}}</span></h5>
+            <h5 class="text-muted my-2">{% trans 'Email' %} : <span class="text-dark">{{data.email}}</span></h5>
+            <h5 class="text-muted my-2">{% trans 'Last Login' %} : <span class="text-dark">{{data.last_login|date}}</span></h5>
+        </div>
+        {% endblock %}
+    </div>
+</div>
+</div>
+{% endblock %}

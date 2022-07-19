@@ -1,0 +1,404 @@
+{% extends 'base.html' %}
+{% block doctor %}
+{% load static %}
+{% load i18n %}
+<div class="hero_area">
+    <section class=" slider_section ">
+      <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">01</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1">02</li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2">03</li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                      {% trans 'Get up wherever you want' %} <br/>
+                      {% trans 'Show yourself 1st Aid ' %}<br/>
+                    </h1>
+                    <p>
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        {% trans 'Read More' %}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                      {% trans 'For This' %} <br/>
+                      {% trans 'You just have to have a desire.' %} <br/>
+                    </h1>
+                    <p>
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        {% trans 'Read More' %}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="container">
+              <div class="row">
+                <div class="col-lg-5 col-md-6">
+                  <div class="slider_detail-box">
+                    <h1>
+                      {% trans 'Certainly,' %} <br/>
+                      {% trans 'Use our Website,' %} <br/>
+                      {% trans 'and rate it.' %}
+                    </h1>
+                    <p>
+                      sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                      nostrud exercitation ullamco laboris nisi
+                    </p>
+                    <div class="btn-box">
+                      <a href="" class="btn-1">
+                        {% trans 'Read More' %}
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="slider_img-box">
+                    <img src="{% static 'images/slider-img.png' %}" alt=""/>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel_btn-container">
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+    </section>
+</div>
+
+    <!-- end slider section -->
+
+
+  <!-- welcome section -->
+    {% include 'welcome.html' %}
+  <!-- end welcome section -->
+
+  <!-- service section -->
+
+  <section class="service_section">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          {% trans 'Our Centers' %}
+        </h2>
+      </div>
+      <div class="service_container layout_padding2">
+        <div class="service_box">
+          <div class="img-box">
+            <img src="{% static 'images/centers-1.jpg' %}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h4>
+              {% trans 'Andijan' %} <br/>
+              {% trans 'Medicine Centre' %}
+            </h4>
+            <p>
+              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
+              slightly believable. If you are
+            </p>
+          </div>
+        </div>
+        <div class="service_box">
+          <div class="img-box">
+            <img src="{% static 'images/centers-3.jpg' %}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h4>
+              {% trans 'Namangan' %} <br/>
+              {% trans 'Doctor.M' %}
+            </h4>
+            <p>
+              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
+              slightly believable. If you are
+            </p>
+          </div>
+        </div>
+        <div class="service_box">
+          <div class="img-box">
+            <img src="{% static 'images/centers-2.jpg' %}" alt=""/>
+          </div>
+          <div class="detail-box">
+            <h4>
+              {% trans 'Farg&#39;ona' %} <br/>
+              {% trans 'Medicine Center' %}
+            </h4>
+            <p>
+              have suffered alteration in some form, by injected humour, or randomised words which don&#39;t look even
+              slightly believable. If you are
+            </p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <a href="">
+          {% trans 'Read More' %}
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- end service section -->
+  <!--problem section -->
+   {% include 'problem.html' %}
+  <!-- end problem section -->
+  <!-- why section -->
+
+  <section class="why_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          {% trans 'Why Choose Us' %}
+        </h2>
+      </div>
+      <div class="content-container">
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis
+        </p>
+        <div class="row">
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="{% static 'images/smiley.png' %}" alt=""/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                97%
+              </h3>
+              <h6>
+                {% trans 'SATISFIED CLIENTS' %}
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="{% static 'images/monitor.png' %}" alt=""/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                1200+
+              </h3>
+              <h6>
+                {% trans 'AWESOME planing' %}
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="{% static 'images/multiple-users-silhouette.png' %}" alt=""/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                2300+
+              </h3>
+              <h6>
+                {% trans 'CLIENTS' %}
+              </h6>
+            </div>
+          </div>
+          <div class="col-md-3 col-sm-6">
+            <div class="img-box">
+              <img src="{% static 'images/bar-chart.png' %}" alt=""/>
+            </div>
+            <div class="detail-box">
+              <h3>
+                12000+
+              </h3>
+              <h6>
+                {% trans 'Feedbacks' %}
+              </h6>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- end why section -->
+
+  <!-- client section -->
+  <section class="client_section layout_padding">
+    <div class="container">
+      <h2>
+        {% trans 'What Our Clients Says' %}
+      </h2>
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="client_container layout_padding2">
+              <div class="client_text">
+                <p>
+                  psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                </p>
+              </div>
+              <div class="detail-box">
+                <div class="img-box">
+                  <img src="{% static 'images/client.png' %}" alt=""/>
+                </div>
+                <div class="name">
+                  <h5>
+                    Joans Mark
+                  </h5>
+                  <p>
+                    cal
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_text">
+                <p>
+                  psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                </p>
+              </div>
+              <div class="detail-box">
+                <div class="img-box">
+                  <img src="{% static 'images/client.png' %}" alt=""/>
+                </div>
+                <div class="name">
+                  <h5>
+                    John Dell
+                  </h5>
+                  <p>
+                    cal
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="client_container layout_padding2">
+              <div class="client_text">
+                <p>
+                  psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+                  magna
+                  aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                  commodo
+                  consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+                </p>
+              </div>
+              <div class="detail-box">
+                <div class="img-box">
+                  <img src="{% static 'images/client.png' %}" alt=""/>
+                </div>
+                <div class="name">
+                  <h5>
+                    Michael Jordan
+                  </h5>
+                  <p>
+                    cal
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+  <!-- end client section -->
+  <!-- contact section -->
+  <section class="contact_section layout_padding">
+    <div class="container contact_heading">
+      <h2>
+        {% trans 'Contact Us' %}
+      </h2>
+      <p>
+        psum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+      </p>
+    </div>
+    <div class="container">
+      <form>
+        <div class="form-row">
+          <div class="form-group col-md-6">
+            <label for="inputName4">{% trans 'Name' %}</label>
+            <input type="text" class="form-control" id="inputName4"/>
+          </div>
+          <div class="form-group col-md-6">
+            <label for="inputEmail4">{% trans 'Email' %}</label>
+            <input type="email" class="form-control" id="inputEmail4"/>
+          </div>
+
+        </div>
+        <div class="form-row">
+          <div class="form-group col-md-12">
+            <label for="inputNumber4">{% trans 'Phone Number' %}</label>
+            <input type="number" class="form-control" id="inputNumber4"/>
+          </div>
+
+        </div>
+        <div class="form-group">
+          <label for="inputMessage">{% trans 'Message' %}</label>
+          <input type="text" class="form-control" id="inputMessage" placeholder=""/>
+        </div>
+        <div class="d-flex justify-content-center">
+            <button type="submit" class="">{% trans 'Send' %}</button>
+        </div>
+        </form>
+    </div>
+
+
+
+  </section>
+
+{% endblock %}

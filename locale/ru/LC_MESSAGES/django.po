@@ -1,0 +1,426 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-18 12:16+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\config\settings.py:109
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:110
+msgid "Uzbek"
+msgstr ""
+
+#: .\config\settings.py:111
+msgid "Russian"
+msgstr ""
+
+#: .\templates\about.html:9 .\templates\welcome.html:7
+msgid "Welcome To Our Hospital"
+msgstr "Добро пожаловать в нашу больницу"
+
+#: .\templates\about.html:18 .\templates\welcome.html:16
+msgid ""
+"You can use this site to write your questions, that is, your health "
+"problems. Our professional doctors"
+msgstr ""
+"Вы можете использовать этот сайт чтобы написать свои вопросы то есть ваше "
+"здоровьепроблемы. Наши профессиональные врачи."
+
+#: .\templates\about.html:18 .\templates\welcome.html:16
+msgid "will answer your question,"
+msgstr "ответит на ваш вопрос,"
+
+#: .\templates\about.html:19 .\templates\welcome.html:17
+msgid "and if your question is of interest to others,"
+msgstr "и если ваш вопрос интересен другим,"
+
+#: .\templates\about.html:19 .\templates\welcome.html:17
+msgid "they can also get answers to their questions using our site."
+msgstr "они также могут получить ответы на свои вопросы, используя наш сайт."
+
+#: .\templates\about.html:23 .\templates\base.html:174
+#: .\templates\base.html:222 .\templates\feedback.html:19
+#: .\templates\index.html:29 .\templates\index.html:57
+#: .\templates\index.html:86 .\templates\index.html:177
+#: .\templates\intro.html:29 .\templates\intro.html:57
+#: .\templates\intro.html:86 .\templates\problem.html:21
+#: .\templates\welcome.html:21
+msgid "Read More"
+msgstr "Читать далее"
+
+#: .\templates\base.html:69
+msgid "Home"
+msgstr "Дом"
+
+#: .\templates\base.html:72
+msgid "About"
+msgstr "О нас"
+
+#: .\templates\base.html:75
+msgid "Contact"
+msgstr "Контакт"
+
+#: .\templates\base.html:78 .\templates\feedback.html:6
+#: .\templates\index.html:250 .\templates\intro.html:124
+#: .\templates\intro.html:212
+msgid "Feedbacks"
+msgstr "Отзывы"
+
+#: .\templates\base.html:81
+msgid "Profile"
+msgstr "Профиль"
+
+#: .\templates\base.html:102 .\templates\login.html:7
+msgid "LogIn"
+msgstr "Авторизоваться"
+
+#: .\templates\base.html:105 .\templates\signup.html:7
+msgid "Sign Up"
+msgstr "Зарегистрироваться"
+
+#: .\templates\base.html:152
+msgid "Services"
+msgstr "Услуги"
+
+#: .\templates\base.html:159
+msgid "Laboratory Tests"
+msgstr "Лабораторные тесты"
+
+#: .\templates\base.html:164
+msgid "Ambulance Service"
+msgstr "Служба скорой помощи"
+
+#: .\templates\base.html:169
+msgid "Surgical operations"
+msgstr "Хирургические операции"
+
+#: .\templates\base.html:205 .\templates\contact.html:8
+#: .\templates\index.html:364
+msgid "Contact Us"
+msgstr "Свяжитесь с нами"
+
+#: .\templates\base.html:212 .\templates\contact.html:29
+#: .\templates\index.html:385
+msgid "Phone Number"
+msgstr "Номер телефона"
+
+#: .\templates\base.html:217
+msgid "Address"
+msgstr "Адрес"
+
+#: .\templates\base.html:227
+msgid "Web Site"
+msgstr "Веб-сайт"
+
+#: .\templates\base.html:239
+msgid "Namangan City"
+msgstr "город Наманган"
+
+#: .\templates\base.html:283
+msgid "2022 All Rights Reserved. Made By"
+msgstr "2022 Все права защищены. Сделан"
+
+#: .\templates\contact.html:18 .\templates\index.html:374
+msgid "Name"
+msgstr "Имя"
+
+#: .\templates\contact.html:22 .\templates\edit_profile.html:29
+#: .\templates\index.html:378 .\templates\profile.html:26
+#: .\templates\signup.html:33
+msgid "Email"
+msgstr "Эл. адрес"
+
+#: .\templates\contact.html:35 .\templates\index.html:391
+msgid "Message"
+msgstr "Сообщение"
+
+#: .\templates\contact.html:39 .\templates\index.html:395
+#: .\templates\new_f.html:24
+msgid "Send"
+msgstr "Отправлять"
+
+#: .\templates\edit_feedback.html:10 .\templates\new_f.html:17
+msgid "Title"
+msgstr "Заголовок"
+
+#: .\templates\edit_feedback.html:14 .\templates\new_f.html:21
+msgid "Text"
+msgstr "Текст"
+
+#: .\templates\edit_feedback.html:17 .\templates\edit_profile.html:32
+msgid "Save Change"
+msgstr "Сохранить изменения"
+
+#: .\templates\edit_profile.html:12 .\templates\profile.html:12
+#, fuzzy
+#| msgid "Profile"
+msgid "Edit Profile"
+msgstr "Профиль"
+
+#: .\templates\edit_profile.html:16 .\templates\profile.html:23
+#: .\templates\signup.html:20
+msgid "First Name"
+msgstr "Имя"
+
+#: .\templates\edit_profile.html:20 .\templates\profile.html:24
+#: .\templates\signup.html:24
+#, fuzzy
+#| msgid "Name"
+msgid "Last Name"
+msgstr "Имя"
+
+#: .\templates\edit_profile.html:24 .\templates\forgot_password.html:12
+#: .\templates\login.html:16 .\templates\profile.html:25
+#: .\templates\signup.html:28
+msgid "Username"
+msgstr "Имя пользователя"
+
+#: .\templates\feedback.html:8
+msgid "New"
+msgstr "Новый"
+
+#: .\templates\forgot_password.html:14 .\templates\signup.html:30
+msgid "Enter a Username..."
+msgstr "Введите имя пользователя..."
+
+#: .\templates\forgot_password.html:16
+msgid "Continue"
+msgstr "Продолжать"
+
+#: .\templates\forgot_password.html:18 .\templates\login.html:20
+#: .\templates\signup.html:37
+msgid "Password"
+msgstr "Пароль"
+
+#: .\templates\forgot_password.html:20
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Enter a Password..."
+msgstr "Введите пароль"
+
+#: .\templates\forgot_password.html:21
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Confirm Password"
+msgstr "Введите пароль"
+
+#: .\templates\forgot_password.html:25
+#, fuzzy
+#| msgid "Password"
+msgid "New Password"
+msgstr "Пароль"
+
+#: .\templates\forgot_password.html:26
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Enter a New Password..."
+msgstr "Введите пароль"
+
+#: .\templates\forgot_password.html:27
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Change Password"
+msgstr "Введите пароль"
+
+#: .\templates\index.html:20 .\templates\intro.html:20
+msgid "Get up wherever you want"
+msgstr "Вставай, где хочешь"
+
+#: .\templates\index.html:21 .\templates\intro.html:21
+msgid "Show yourself 1st Aid "
+msgstr "Покажите себе первую помощь"
+
+#: .\templates\index.html:48 .\templates\intro.html:48
+msgid "For This"
+msgstr "Для этого"
+
+#: .\templates\index.html:49 .\templates\intro.html:49
+msgid "You just have to have a desire."
+msgstr "Просто нужно иметь желание."
+
+#: .\templates\index.html:76 .\templates\intro.html:76
+msgid "Certainly,"
+msgstr "Безусловно,"
+
+#: .\templates\index.html:77 .\templates\intro.html:77
+msgid "Use our Website,"
+msgstr "Используйте наш веб-сайт,"
+
+#: .\templates\index.html:78 .\templates\intro.html:78
+msgid "and rate it."
+msgstr "и оцените его."
+
+#: .\templates\index.html:125
+msgid "Our Centers"
+msgstr "Наши центры"
+
+#: .\templates\index.html:135
+msgid "Andijan"
+msgstr "Андижан"
+
+#: .\templates\index.html:136
+#, fuzzy
+#| msgid "Medicine Center"
+msgid "Medicine Centre"
+msgstr "Медицинский центр"
+
+#: .\templates\index.html:150
+msgid "Namangan"
+msgstr "Наманган"
+
+#: .\templates\index.html:151
+msgid "Doctor.M"
+msgstr "Доктор.М"
+
+#: .\templates\index.html:165
+msgid "Farg&#39;ona"
+msgstr "Фаргона"
+
+#: .\templates\index.html:166
+msgid "Medicine Center"
+msgstr "Медицинский центр"
+
+#: .\templates\index.html:193 .\templates\intro.html:155
+msgid "Why Choose Us"
+msgstr "Почему нужно выбрать нас"
+
+#: .\templates\index.html:211 .\templates\intro.html:173
+msgid "SATISFIED CLIENTS"
+msgstr "ДОВОЛЬНЫЕ КЛИЕНТЫ"
+
+#: .\templates\index.html:224 .\templates\intro.html:186
+msgid "AWESOME planing"
+msgstr "ПОТРЯСАЮЩЕЕ планирование"
+
+#: .\templates\index.html:237 .\templates\intro.html:199
+msgid "CLIENTS"
+msgstr "КЛИЕНТЫ"
+
+#: .\templates\index.html:266 .\templates\intro.html:228
+msgid "What Our Clients Says"
+msgstr "Что говорят наши клиенты"
+
+#: .\templates\login.html:13
+msgid "Password or Username incorrect !!!"
+msgstr "Пароль или имя пользователя неверно"
+
+#: .\templates\login.html:17
+msgid "Enter a Username"
+msgstr "Введите имя пользователя"
+
+#: .\templates\login.html:21
+msgid "Enter a Password"
+msgstr "Введите пароль"
+
+#: .\templates\login.html:24 .\templates\signup.html:49
+msgid "Submit"
+msgstr "Отправлять"
+
+#: .\templates\login.html:26
+#, fuzzy
+#| msgid "Password"
+msgid "Forgot Password ?"
+msgstr "Пароль"
+
+#: .\templates\new_f.html:8
+msgid "Write down the disease that is bothering you"
+msgstr "Напишите болезнь, которая вас беспокоит"
+
+#: .\templates\new_f.html:14
+msgid "Feedback has been created. Expect an answer soon."
+msgstr "Обратная связь создана. Ожидайте ответ в ближайшее время."
+
+#: .\templates\new_f.html:18
+#, fuzzy
+#| msgid "Enter a Email..."
+msgid "Enter a Title..."
+msgstr "Введите адрес электронной почты..."
+
+#: .\templates\new_f.html:22
+#, fuzzy
+#| msgid "Enter a Username..."
+msgid "Enter a Text.."
+msgstr "Введите имя пользователя..."
+
+#: .\templates\p_detail.html:14
+msgid "Back"
+msgstr "Назад"
+
+#: .\templates\problem.html:7
+msgid "Do you have a health problem ?"
+msgstr "У вас проблемы со здоровьем ?"
+
+#: .\templates\profile.html:10 .\templates\profile.html:21
+msgid "My All Information"
+msgstr "Вся моя информация"
+
+#: .\templates\profile.html:13
+msgid "My Questions"
+msgstr "Мои вопросы"
+
+#: .\templates\profile.html:14
+msgid "Log Out"
+msgstr "Выйти"
+
+#: .\templates\profile.html:27
+msgid "Last Login"
+msgstr "Последний Войти"
+
+#: .\templates\questions.html:13
+msgid "Edit"
+msgstr "Редактировать"
+
+#: .\templates\questions.html:14
+msgid "Delete"
+msgstr "Удалить"
+
+#: .\templates\signup.html:12
+msgid "Invalid reCaptcha !!!"
+msgstr "Недействительная reCaptcha"
+
+#: .\templates\signup.html:21
+msgid "Enter a First Name..."
+msgstr "Введите Имя..."
+
+#: .\templates\signup.html:25
+msgid "Enter a Last Name..."
+msgstr "Введите фамилию..."
+
+#: .\templates\signup.html:34
+msgid "Enter a Email..."
+msgstr "Введите адрес электронной почты..."
+
+#: .\templates\signup.html:41
+msgid "Password(again)"
+msgstr "Пароль (снова)"
+
+#: .\templates\signup.html:42
+msgid "Password(again)..."
+msgstr "Пароль (снова)..."
+
+#~ msgid "{{dbresponse}}"
+#~ msgstr "Недействительная reCaptcha"
+
+#~ msgid "{{status}}"
+#~ msgstr "Пароль или имя пользователя неверно"
+
+#~ msgid "Medician Centre"
+#~ msgstr "Медицинский центр"

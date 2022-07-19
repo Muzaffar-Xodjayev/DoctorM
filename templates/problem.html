@@ -1,0 +1,28 @@
+{% load i18n %}
+{% load static %}
+<section class="problem_section layout_padding">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          {% trans 'Do you have a health problem ?' %}
+        </h2>
+      </div>
+      <div class="layout_padding2">
+        <div class="img-box">
+          <img src="{% static 'images/problem.jpg' %}" alt=""/>
+        </div>
+        <div class="detail-box">
+          <p>
+            There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in
+            some form, by injected humour, or randomised words which don't look even slightly believable.
+          </p>
+          <div>
+            <a href="">
+              {% trans 'Read More' %}
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

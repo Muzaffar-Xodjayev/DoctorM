@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block doctor %}
+{% load static %}
+{% load i18n %}
+<div class="container mt-5">
+    <h3 class="text-center">{% trans 'Feedbacks' %}</h3>
+    <hr class="bg-warning w-50">
+    <a href="{% url 'new-feedback-page' %}" class="btn btn-sm btn-success">{% trans 'New' %} </a>
+    <div class="row">
+        {% for i in data %}
+        <div class="col-10 col-md-6 col-lg-4">
+            <div class="card shadow p-3 my-2">
+                <img src="/media/{{i.img}}" class="img-fluid" alt="">
+                <h4 class="my-3">{{i.title}}</h4>
+                <hr>
+                <p>{{i.text|truncatechars:150}}</p>
+                <hr>
+                <div>
+                    <a href="{% url 'p-detail-page' i.slug %}" class="btn btn-success">{% trans 'Read More' %}</a>
+                </div>
+                <hr>
+                <small style="text-align: end;"><i>{{i.created_at|date}}</i></small>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+{% endblock %}

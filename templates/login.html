@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block doctor %}
+{% load i18n %}
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-lg-4 col-md-8 col-10 mx-auto">
+      <h3 class="text-center mb-3">{% trans 'LogIn' %}</h3>
+      <hr class="bg-warning w-50">
+      <div class="card shadow p-3">
+        <form method="post">
+          {% csrf_token %}
+          {% if status %}
+            <div class="alert {{col}}">{% trans "Password or Username incorrect !!!" %}</div>
+          {% endif %}
+          <div class="form-group">
+            <label class="form-label">{% trans 'Username' %}</label>
+            <input type="text" class="form-control" name="username" placeholder="{% trans 'Enter a Username' %}">
+          </div>
+          <div class="mt-2">
+            <label class="form-label">{% trans 'Password' %}</label>
+            <input type="password" class="form-control" name="password" placeholder="{% trans 'Enter a Password' %}">
+          </div>
+          <hr>
+          <input type="submit" class="btn btn-success mt-1" value="{% trans 'Submit' %}">
+        </form>
+        <a href="{% url 'forgot-password-page' %}" class="text-decoration-none text-center mt-2" style="font-size: 14px;">{% trans 'Forgot Password ?' %}</a>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

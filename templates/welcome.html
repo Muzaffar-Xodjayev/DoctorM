@@ -1,0 +1,28 @@
+{% load i18n %}
+{% load static %}
+<section class="welcome_section layout_padding mt-5">
+    <div class="container">
+      <div class="custom_heading-container">
+        <h2>
+          {% trans 'Welcome To Our Hospital' %}
+        </h2>
+      </div>
+      <div class="layout_padding2">
+        <div class="img-box">
+          <img class="img-fluid" src="{% static 'images/hos.png' %}" alt=""/>
+        </div>
+        <div class="detail-box">
+          <p>
+            {% trans 'You can use this site to write your questions, that is, your health problems. Our professional doctors' %} <br> {% trans 'will answer your question,' %}
+            {% trans 'and if your question is of interest to others,' %} <br> {% trans 'they can also get answers to their questions using our site.' %}
+          </p>
+          <div>
+            <a href="">
+              {% trans 'Read More' %}
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>

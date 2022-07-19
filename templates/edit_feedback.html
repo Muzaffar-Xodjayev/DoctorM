@@ -1,0 +1,24 @@
+{% extends 'profile.html' %}
+{% block profileBlock %}
+{% load i18n %}
+<div class="row">
+    <div class="col-lg-8 col-md-10 col-12 py-2 mx-auto">
+        <div class="card shadow p-3">
+            <form method="post">
+                {% csrf_token %}
+                <div class="mb-2">
+                    <label >{% trans 'Title' %}</label>
+                    <input type="text" value="{{data.title}}" name="title" class="form-control">
+                </div>
+                <div class="mb-2">
+                    <label >{% trans 'Text' %}</label>
+                    <textarea name="text"  rows="6" class="form-control">{{data.text}}</textarea>
+                </div>
+                <input type="submit" class="btn btn-success mt-2" value="{% trans 'Save Change' %}">
+            </form>
+        </div>
+    </div>
+</div>
+
+
+{% endblock %}

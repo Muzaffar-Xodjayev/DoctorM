@@ -1,0 +1,3 @@
+# gitignore in DoctorApp
+.venv/
+.idea/

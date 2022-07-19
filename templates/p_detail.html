@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block doctor %}
+{% load i18n %}
+<div class="container mt-5">
+    <div class="row">
+        <div class="col-10 col-sm-10 col-lg-8 mx-auto">
+            <div class="card shadow p-3">
+                <img src="/media/{{data.img}}" alt="#" class="img-fluid">
+                <h4 class="mt-2">{{data.title}}</h4>
+                <hr>
+                <p>{{data.text}}</p>
+                <hr>
+                <div>
+                    <a href="{% url 'feedback-page' %}" class="btn btn-warning">{% trans 'Back' %}</a>
+                </div>
+                <hr>
+                <small class="text-muted" style="text-align: end;">{{i.created_at|date}}</small>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

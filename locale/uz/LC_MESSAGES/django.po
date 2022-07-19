@@ -1,0 +1,427 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-07-18 12:14+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: .\config\settings.py:109
+msgid "English"
+msgstr ""
+
+#: .\config\settings.py:110
+msgid "Uzbek"
+msgstr ""
+
+#: .\config\settings.py:111
+msgid "Russian"
+msgstr ""
+
+#: .\templates\about.html:9 .\templates\welcome.html:7
+msgid "Welcome To Our Hospital"
+msgstr "Kasalxonamizga xush kelibsiz"
+
+#: .\templates\about.html:18 .\templates\welcome.html:16
+msgid ""
+"You can use this site to write your questions, that is, your health "
+"problems. Our professional doctors"
+msgstr ""
+"Siz bu saytdan foydalanib, o'zingizni qiziqtirgan savollaringizni, ya'ni "
+"sog'lig'ingiz borasida bo'lgan muammolaringizni yozishingiz mumkin . Bizning "
+"professional shifokorlarimiz"
+
+#: .\templates\about.html:18 .\templates\welcome.html:16
+msgid "will answer your question,"
+msgstr "sizning savolingizga javob berishadi"
+
+#: .\templates\about.html:19 .\templates\welcome.html:17
+msgid "and if your question is of interest to others,"
+msgstr "va sizning savolingiz boshqalarni ham qiziqtirgan"
+
+#: .\templates\about.html:19 .\templates\welcome.html:17
+msgid "they can also get answers to their questions using our site."
+msgstr ""
+"bo'lsa ular ham saytimmizdan foydalanib o'z savollariga javob olishlari "
+"mumkin."
+
+#: .\templates\about.html:23 .\templates\base.html:174
+#: .\templates\base.html:222 .\templates\feedback.html:19
+#: .\templates\index.html:29 .\templates\index.html:57
+#: .\templates\index.html:86 .\templates\index.html:177
+#: .\templates\intro.html:29 .\templates\intro.html:57
+#: .\templates\intro.html:86 .\templates\problem.html:21
+#: .\templates\welcome.html:21
+msgid "Read More"
+msgstr "Batafsil"
+
+#: .\templates\base.html:69
+msgid "Home"
+msgstr "Asosiy"
+
+#: .\templates\base.html:72
+msgid "About"
+msgstr "Biz Haqimizda"
+
+#: .\templates\base.html:75
+msgid "Contact"
+msgstr "Aloqa"
+
+#: .\templates\base.html:78 .\templates\feedback.html:6
+#: .\templates\index.html:250 .\templates\intro.html:124
+#: .\templates\intro.html:212
+msgid "Feedbacks"
+msgstr "Fikr-Mulohazalar"
+
+#: .\templates\base.html:81
+msgid "Profile"
+msgstr "Profil"
+
+#: .\templates\base.html:102 .\templates\login.html:7
+msgid "LogIn"
+msgstr "Kirish"
+
+#: .\templates\base.html:105 .\templates\signup.html:7
+msgid "Sign Up"
+msgstr "Ro'yxatdan o'tish"
+
+#: .\templates\base.html:152
+msgid "Services"
+msgstr "Xizmatlar"
+
+#: .\templates\base.html:159
+msgid "Laboratory Tests"
+msgstr "Laboratoriya sinovlari"
+
+#: .\templates\base.html:164
+msgid "Ambulance Service"
+msgstr "Tez yordam xizmati"
+
+#: .\templates\base.html:169
+msgid "Surgical operations"
+msgstr "Jarrohlik operatsiyalari"
+
+#: .\templates\base.html:205 .\templates\contact.html:8
+#: .\templates\index.html:364
+msgid "Contact Us"
+msgstr "Biz bilan bog'lanish"
+
+#: .\templates\base.html:212 .\templates\contact.html:29
+#: .\templates\index.html:385
+msgid "Phone Number"
+msgstr "Telefon Raqami"
+
+#: .\templates\base.html:217
+msgid "Address"
+msgstr "Manzil"
+
+#: .\templates\base.html:227
+msgid "Web Site"
+msgstr "Veb-sayt"
+
+#: .\templates\base.html:239
+msgid "Namangan City"
+msgstr "Namangan Shahar"
+
+#: .\templates\base.html:283
+msgid "2022 All Rights Reserved. Made By"
+msgstr "2022 Barcha huquqlar himoyalangan. Tomonidan tayyorlangan"
+
+#: .\templates\contact.html:18 .\templates\index.html:374
+msgid "Name"
+msgstr "Ism"
+
+#: .\templates\contact.html:22 .\templates\edit_profile.html:29
+#: .\templates\index.html:378 .\templates\profile.html:26
+#: .\templates\signup.html:33
+msgid "Email"
+msgstr "Elektron pochta"
+
+#: .\templates\contact.html:35 .\templates\index.html:391
+msgid "Message"
+msgstr "Xabar"
+
+#: .\templates\contact.html:39 .\templates\index.html:395
+#: .\templates\new_f.html:24
+msgid "Send"
+msgstr "Yuborish"
+
+#: .\templates\edit_feedback.html:10 .\templates\new_f.html:17
+msgid "Title"
+msgstr "Sarlavha"
+
+#: .\templates\edit_feedback.html:14 .\templates\new_f.html:21
+msgid "Text"
+msgstr "Matn"
+
+#: .\templates\edit_feedback.html:17 .\templates\edit_profile.html:32
+msgid "Save Change"
+msgstr "O'zgarishni Saqlash"
+
+#: .\templates\edit_profile.html:12 .\templates\profile.html:12
+#, fuzzy
+#| msgid "Profile"
+msgid "Edit Profile"
+msgstr "Profil"
+
+#: .\templates\edit_profile.html:16 .\templates\profile.html:23
+#: .\templates\signup.html:20
+msgid "First Name"
+msgstr "Ism"
+
+#: .\templates\edit_profile.html:20 .\templates\profile.html:24
+#: .\templates\signup.html:24
+#, fuzzy
+#| msgid "Name"
+msgid "Last Name"
+msgstr "Ism"
+
+#: .\templates\edit_profile.html:24 .\templates\forgot_password.html:12
+#: .\templates\login.html:16 .\templates\profile.html:25
+#: .\templates\signup.html:28
+msgid "Username"
+msgstr "Foydalanuvchi Nomi"
+
+#: .\templates\feedback.html:8
+msgid "New"
+msgstr "Yangi"
+
+#: .\templates\forgot_password.html:14 .\templates\signup.html:30
+msgid "Enter a Username..."
+msgstr "Foydalanuvchi Nomini kiriting..."
+
+#: .\templates\forgot_password.html:16
+msgid "Continue"
+msgstr "Keyingisi"
+
+#: .\templates\forgot_password.html:18 .\templates\login.html:20
+#: .\templates\signup.html:37
+msgid "Password"
+msgstr "Parol"
+
+#: .\templates\forgot_password.html:20
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Enter a Password..."
+msgstr "Parolni kiriting"
+
+#: .\templates\forgot_password.html:21
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Confirm Password"
+msgstr "Parolni kiriting"
+
+#: .\templates\forgot_password.html:25
+#, fuzzy
+#| msgid "Password"
+msgid "New Password"
+msgstr "Parol"
+
+#: .\templates\forgot_password.html:26
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Enter a New Password..."
+msgstr "Parolni kiriting"
+
+#: .\templates\forgot_password.html:27
+#, fuzzy
+#| msgid "Enter a Password"
+msgid "Change Password"
+msgstr "Parolni kiriting"
+
+#: .\templates\index.html:20 .\templates\intro.html:20
+msgid "Get up wherever you want"
+msgstr "Istagan joyingizdan turib"
+
+#: .\templates\index.html:21 .\templates\intro.html:21
+msgid "Show yourself 1st Aid "
+msgstr "O'zingizga birinchi yordamni ko'rsating"
+
+#: .\templates\index.html:48 .\templates\intro.html:48
+msgid "For This"
+msgstr "Buning uchun"
+
+#: .\templates\index.html:49 .\templates\intro.html:49
+msgid "You just have to have a desire."
+msgstr "Sizda faqat xohish bo'lishi kerak."
+
+#: .\templates\index.html:76 .\templates\intro.html:76
+msgid "Certainly,"
+msgstr "Albatta,"
+
+#: .\templates\index.html:77 .\templates\intro.html:77
+msgid "Use our Website,"
+msgstr "Saytimizdan foydalaning,"
+
+#: .\templates\index.html:78 .\templates\intro.html:78
+msgid "and rate it."
+msgstr "va baho bering."
+
+#: .\templates\index.html:125
+msgid "Our Centers"
+msgstr "Bizning markazlarimiz"
+
+#: .\templates\index.html:135
+msgid "Andijan"
+msgstr "Andijon"
+
+#: .\templates\index.html:136
+#, fuzzy
+#| msgid "Medicine Center"
+msgid "Medicine Centre"
+msgstr "Tibbiyot markazi"
+
+#: .\templates\index.html:150
+msgid "Namangan"
+msgstr "Namangan"
+
+#: .\templates\index.html:151
+msgid "Doctor.M"
+msgstr "Doctor.M"
+
+#: .\templates\index.html:165
+msgid "Farg&#39;ona"
+msgstr "Farg'ona"
+
+#: .\templates\index.html:166
+msgid "Medicine Center"
+msgstr "Tibbiyot markazi"
+
+#: .\templates\index.html:193 .\templates\intro.html:155
+msgid "Why Choose Us"
+msgstr "Nima uchun bizni tanlaysiz"
+
+#: .\templates\index.html:211 .\templates\intro.html:173
+msgid "SATISFIED CLIENTS"
+msgstr "Qoniqarli mijozlar"
+
+#: .\templates\index.html:224 .\templates\intro.html:186
+msgid "AWESOME planing"
+msgstr "Ajoyib rejalashtirish"
+
+#: .\templates\index.html:237 .\templates\intro.html:199
+msgid "CLIENTS"
+msgstr "MIJOZLAR"
+
+#: .\templates\index.html:266 .\templates\intro.html:228
+msgid "What Our Clients Says"
+msgstr "Bizning mijozlarimiz nima deydi"
+
+#: .\templates\login.html:13
+msgid "Password or Username incorrect !!!"
+msgstr "Parol yoki Foydalanuvchi Nomi xato"
+
+#: .\templates\login.html:17
+msgid "Enter a Username"
+msgstr "Foydalanuvchi nomini kiriting"
+
+#: .\templates\login.html:21
+msgid "Enter a Password"
+msgstr "Parolni kiriting"
+
+#: .\templates\login.html:24 .\templates\signup.html:49
+msgid "Submit"
+msgstr "Yuborish"
+
+#: .\templates\login.html:26
+#, fuzzy
+#| msgid "Password"
+msgid "Forgot Password ?"
+msgstr "Parolni unutdingizmi ?"
+
+#: .\templates\new_f.html:8
+msgid "Write down the disease that is bothering you"
+msgstr "Sizni bezovta qilayotgan kasallikni yozing"
+
+#: .\templates\new_f.html:14
+msgid "Feedback has been created. Expect an answer soon."
+msgstr "Fikr-mulohaza yaratildi. Tez orada javob kuting."
+
+#: .\templates\new_f.html:18
+#, fuzzy
+#| msgid "Enter a Email..."
+msgid "Enter a Title..."
+msgstr "Elektron pochtani kiriting..."
+
+#: .\templates\new_f.html:22
+#, fuzzy
+#| msgid "Enter a Username..."
+msgid "Enter a Text.."
+msgstr "Foydalanuvchi Nomini kiriting..."
+
+#: .\templates\p_detail.html:14
+msgid "Back"
+msgstr "Orqaga"
+
+#: .\templates\problem.html:7
+msgid "Do you have a health problem ?"
+msgstr "Sizda sog'liq muammosi bormi?"
+
+#: .\templates\profile.html:10 .\templates\profile.html:21
+msgid "My All Information"
+msgstr "Mening barcha ma'lumotlarim"
+
+#: .\templates\profile.html:13
+msgid "My Questions"
+msgstr "Mening savollarim"
+
+#: .\templates\profile.html:14
+msgid "Log Out"
+msgstr "Chiqish"
+
+#: .\templates\profile.html:27
+msgid "Last Login"
+msgstr "Oxirgi kirish"
+
+#: .\templates\questions.html:13
+msgid "Edit"
+msgstr "Tahrirlash"
+
+#: .\templates\questions.html:14
+msgid "Delete"
+msgstr "O'chirish"
+
+#: .\templates\signup.html:12
+msgid "Invalid reCaptcha !!!"
+msgstr "reCaptcha Bo'limini tekshiring !!!"
+
+#: .\templates\signup.html:21
+msgid "Enter a First Name..."
+msgstr "Ismingizni kiriting..."
+
+#: .\templates\signup.html:25
+msgid "Enter a Last Name..."
+msgstr "Familiyani kiriting..."
+
+#: .\templates\signup.html:34
+msgid "Enter a Email..."
+msgstr "Elektron pochtani kiriting..."
+
+#: .\templates\signup.html:41
+msgid "Password(again)"
+msgstr "Parol (yana)"
+
+#: .\templates\signup.html:42
+msgid "Password(again)..."
+msgstr "Parol (yana)..."
+
+#~ msgid "{{dbresponse}}"
+#~ msgstr "reCaptcha Bo'limini tekshiring"
+
+#~ msgid "{{status}}"
+#~ msgstr "Parol yoki foydalanuvchi nomi noto'g'ri"
+
+#~ msgid "Medician Centre"
+#~ msgstr "Tibbiyot markazi"

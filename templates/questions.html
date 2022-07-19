@@ -1,0 +1,22 @@
+{% extends 'profile.html' %}
+{% block profileBlock %}
+{% load i18n %}
+<div class="row">
+    {% for i in data %}
+    <div class="col-lg-6 col-md-10 col-12 py-2">
+        <div class="card shadow p-3">
+            <h4 class="my-2">{{i.title}}</h4>
+            <hr>
+            <p>{{i.text}}</p>
+            <hr>
+            <div>
+                <a href="{% url 'feed-update-page' i.id %}" class="btn btn-warning">{% trans 'Edit' %}</a>
+                <a href="{% url 'feed-delete-page' i.id %}" class="btn btn-danger">{% trans 'Delete' %}</a>
+            </div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
+
+
+{% endblock %}
